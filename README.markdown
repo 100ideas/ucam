@@ -21,14 +21,17 @@ modded ps3eye: <http://www.dusseiller.ch/labs/?p=912> (I used a small spot of su
 setup
 -----
 
-1. upload ServoFirmata\_9\_11.pde to your arduino and connect the servo control wires to the +5v, ground, and digital pins 9 and 11. You will want a breadboard to breakout the power bus to the servos.
+1.
+upload ServoFirmata\_9\_11.pde to your arduino and connect the servo control wires to the +5v, ground, and digital pins 9 and 11. You will want a breadboard to breakout the power bus to the servos.
 
- On TPro SG90 or HTX900 microservos, the wiring colors correspond to: 
- - yellow: control
- - red: 5 volts
- - brown: ground
+On TPro SG90 or HTX900 microservos, the wiring colors correspond to: 
 
-2. run ucam\_ps3.pde in processing and click around.
+- yellow: control
+- red: 5 volts
+- brown: ground
+
+2.
+run ucam\_ps3.pde in processing and click around.
 
 
 

@@ -8,6 +8,11 @@
 *.exe
 *.o
 *.so
+*.cpp
+*.eep
+*.elf
+*.hex
+*.a
 
 # Packages #
 ############
