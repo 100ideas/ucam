@@ -12,11 +12,8 @@ int servoY = 11;
 int mapX = 0;
 int mapY = 0;
 
-int WIDTH = 640;
-int HEIGHT = 480;
-
 void setup() {
-  size(WIDTH, HEIGHT);  // Change size to 320 x 240 if too slow at 640 x 480
+  size(1280, 960);  // Change size to 320 x 240 if too slow at 640 x 480
  
   // list all available capture devices to the console to find your camera.
   // your system may differ from mine - look for the "USB Video Class Video"
@@ -53,8 +50,8 @@ public void servo( int x ){
 }
 
 void updatePosition() {
-        mapX = round ( map( mouseX, 0, WIDTH, 30, 150 ) );
-        mapY = round ( map( mouseY, 0, HIGHT, 30, 150 ) );
+        mapX = round ( map( mouseX, 0, width, 30, 150 ) );
+        mapY = round ( map( mouseY, 0, height, 30, 150 ) );
       //  println("mouse" + mouseX + ", " + mouseY);
       //  println( mapX + ", " + mapY );
         arduino.analogWrite(servoX, mapY );
