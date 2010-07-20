@@ -1,18 +1,35 @@
-ucam
-====
+README
+======
 
-ucam is a suite of programs for interacting with and controlling diy 2-axis stages, primarily for controlling microscope slides.
-
-Currently ucam is based off of [processing.org](http://processing.org) and [arduino.cc](http://arduino.cc) code and can control 2 servos attached to an arduino via mouse, keyboard, OSC, or TUIO events.
+ucam\_ps3.pde displays the videostream from a modded ps3eye microscope via USB, accepts mouse clicks and drags as user input, and controls a 2-axis servo-powered microscope slide stage via an arduino w/ firmata firmware
 
 
-Setup:
+requirements
+------------
+
+processing ide: <http://processing.org/download/>
+
+video, serial, and arduino libraries for processing (included by default): <http://processing.org/reference/libraries/>.
+
+arduino ide: <http://arduino.cc/en/Main/Software>
+
+ucam hardware platform: <http://diybio.org/ucam>
+
+modded ps3eye: <http://www.dusseiller.ch/labs/?p=912> (I used a small spot of superglue to lightly secure the inverted lens to the lens mount).
+
+
+setup
 -----
 
-Visit [diybio.org/ucam](http://diybio.org/ucam) for instructions on hacking a cheap webcam into a microscope [TODO: make this into an instructable].
+1. upload ServoFirmata\_9\_11.pde to your arduino and connect the servo control wires to the +5v, ground, and digital pins 9 and 11. You will want a breadboard to breakout the power bus to the servos.
 
-After flashing ServoFirmata_9_11 onto an arduino and attaching servos to pins 9 and 11, tuio events can be used to control the servos via arduino_osx_servo_tuio.
+ On TPro SG90 or HTX900 microservos, the wiring colors correspond to: 
+ - yellow: control
+ - red: 5 volts
+ - brown: ground
 
-Requires arduino, TUIO, and oscP5 processing libraries, as well as the firmata v2.1 arduino library.
+2. run ucam\_ps3.pde in processing and click around.
 
-*last updated: 8 Feb 2010*
+
+
+last updated: 20 Jul 2010
