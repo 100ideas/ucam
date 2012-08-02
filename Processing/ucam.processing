@@ -1,0 +1,45 @@
+/**
+ * Getting Started with Capture.
+ * 
+ * Reading and displaying an image from an attached Capture device. 
+ */ 
+ 
+import processing.video.*;
+import blobDetection.*; 
+
+Capture cam;
+Capture isight;
+
+BlobDetection theBlobDetection; 
+PImage img; 
+boolean newFrame=false; 
+
+void setup() {
+  size(640, 480);  // Change size to 320 x 240 if too slow at 640 x 480
+
+  // If no device is specified, will just use the default.
+  
+  // To use another device (i.e. if the default device causes an error),  
+  // list all available capture devices to the console to find your camera.
+  String[] devices = Capture.list();
+  println(devices);
+  println(devices[7]);
+  
+  // Change devices[0] to the proper index for your camera.
+  isight = new Capture(this, width, height, devices[7]); // isight identically named to ext. usb camera?
+  cam = new Capture(this, width, height, devices[7]);
+  isight = null; //get rid of isight object since we just use it to help select the external
+
+  // Opens the settings page for this capture device.
+  //camera.settings();
+}
+
+
+void captureEvent(Capture myCapture) {
+  cam.read();
+}
+
+void draw() {
+  image(cam, 0, 0);
+}
+
