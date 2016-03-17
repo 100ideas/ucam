@@ -17,7 +17,7 @@ Key distinctions with this design are that both the x- and the y-stage *are in t
 
 ucam_ps3.pde displays the videostream from a modded ps3eye microscope via USB, accepts mouse clicks and drags as user input, and controls a 2-axis servo-powered microscope slide stage via an arduino w/ firmata firmware
 
-**Note:** The assembly pictures above was originally modeled in Alibre back in 2010. I hope to convert these to a more usable format (shouldn't be too hard to reconstruct using the design files in this repo). The original alibre `AD_PRT` and `AD_ASM` files are available in a separate repo: [100ideas/ucam-alibre-cad](https://github.com/100ideas/ucam-alibre-cad).
+**Note:** The assembly pictured above was originally modeled in Alibre back in 2010. I hope to convert these to a more usable format (shouldn't be too hard to reconstruct using the design files in this repo). The original alibre `AD_PRT` and `AD_ASM` files are available in a separate repo: [100ideas/ucam-alibre-cad](https://github.com/100ideas/ucam-alibre-cad).
 
 requirements
 ------------
