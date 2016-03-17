@@ -1,7 +1,11 @@
 README
 ======
 
-A low-cost 2-axis motion stage designed to be entirely laser-cuttable (just add servos) & a processing sketch for controlling servos.
+A low-cost 2-axis motion stage designed to be entirely laser-cuttable (just add servos) & a processing sketch for controlling servos. 
+
+Key distinctions with this design are that both the x- and the y-stage *are in the same plane*, i.e. they are not stacked on one another. Cams cut with an [Archimede's spiral](https://www.wikiwand.com/en/Archimedean_spiral) linearly translate rotational motion from stepper motors into linear displacement.
+
+(The design pictured below also depicts a z-axis - which turned out to be overconstrained as designed - and this repo only includes vector files for a 2-axis stage).
 
 **[demo video](https://vimeo.com/11139943)**
 
