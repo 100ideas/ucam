@@ -7,9 +7,13 @@ Key distinctions with this design are that both the x- and the y-stage *are in t
 
 (The design pictured below also depicts a z-axis - which turned out to be overconstrained as designed - and this repo only includes vector files for a 2-axis stage).
 
+<a href="https://vimeo.com/11139943" target="_blank">
+![](https://raw.githubusercontent.com/100ideas/ucam/master/Design_Files/ucam_v0_5_1-vimeo-screenshot.png)
 **[demo video](https://vimeo.com/11139943)**
+</a>
 
 ![](https://raw.githubusercontent.com/100ideas/ucam/master/Design_Files/ucam_v0_5_1-alibre-cad-render.png)
+
 
 ucam_ps3.pde displays the videostream from a modded ps3eye microscope via USB, accepts mouse clicks and drags as user input, and controls a 2-axis servo-powered microscope slide stage via an arduino w/ firmata firmware
 
